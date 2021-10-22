@@ -91,8 +91,6 @@
     "x509"
   ],
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "webpack",
     "test-build": "webpack --config webpack-tests.config.js",
     "test": "cross-env NODE_ENV=test mocha -t 30000 -R ${REPORTER:-spec} tests/unit/index.js",
     "test-karma": "karma start",
